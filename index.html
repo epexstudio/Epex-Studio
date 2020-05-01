@@ -15,7 +15,8 @@
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     </head>
-    <body>
+    <body data-spy="scroll" data-target="#navbarNav">
+      <div>
         <!-----------------nav-section-------------------------->
         <section id="nav-bar">
           <nav class="navbar navbar-expand-lg navbar-light bg-dark">
@@ -25,19 +26,19 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
               <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
+                <li class="nav-item mr-4">
                   <a class="nav-link" href="#banner">Home</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item mr-4">
                   <a class="nav-link" href="#services">Services</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item mr-4">
                   <a class="nav-link" href="#about-us">About</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item mr-4">
                   <a class="nav-link" href="#team">Team</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item mr-4">
                   <a class="nav-link" href="#social-media">Contact</a>
                 </li>
               </ul>
@@ -63,11 +64,12 @@
             </div>
           </div>
           <img src="images/wave.png" class="bottom-img">
+          
         </section>
         <!----------------- service-section -------------------->
         <section id="services">
           <div class="container text-center">
-            <h1 class="serv-title" data-aos="fade-right" data-aos-duration="2000">What We Do?</h1>
+            <h1 class="serv-title" data-aos="fade-right" data-aos-duration="2000" style="margin-top: -30px;">What We Do?</h1>
             <div class="row text-center">
               <div class="col-md-4 services " data-aos="fade-up" data-aos-duration="2000">
                 <img src="images/graphic design.svg" class="service-img">
@@ -85,9 +87,15 @@
                 <p>Develops Scalable and Powerful Applications in Both Android and iOS.</p>
               </div>
             </div>
-              <button type="button" class="btn-primary">All Services</button>
+            <div id="all" class="col-md-4 allservices">
+              <img src="images/tutorial.svg" class="service-img">
+              <h4>Graphic Design Tutorials </h4>
+              <p>learn design with our free how-to tutorials and video courses. Learn how to use tools such as Adobe Photoshop,Illustrator,After Effects and Premiere Pro.</p>
+            </div>
           </div>
-
+            <div class="text-center">
+              <button id="btn" type="button" class="btn-primary" data-aos="fade-up" data-aos-duration="2000">All Services</button>
+            </div>
         </section>
         <!----------------- about-section -------------------->
         <section id="about-us">
@@ -120,8 +128,7 @@
                   <img src="images/anu.jpg">
                   <p class="mem-details"><b>Anu S Kumar</b><br>
                     <a href="https://www.instagram.com/__anu_sk/"><i class="fab fa-instagram-square"></i></i>@__anu_sk</a>
-                  </p>
-                  
+                  </p> 
               </div>
               <div class="col-md-4 team" data-aos="zoom-out-up" data-aos-duration="1000">
                 <img src="images/manu.jpeg">
@@ -134,39 +141,37 @@
               <p class="mem-details"><b>Sree Visakh</b><br>
                 <a href="https://www.instagram.com/editing_b0y/"><i class="fab fa-instagram-square"></i></i>@editing_b0y</a>
               </p>
-          </div>
             </div>
-
+            </div>
           </div>
         </section>
         <!----------------- socialmedia-section ------------->
         <section id="social-media">
           <div class="container text-center" data-aos="fade-left" data-aos-duration="1000">
             <h1>Find Us On Social Media</h1>
-            <div class="row row-cols-4" style="display: inline-flex;">
-              <div class="col-md social-media">
+          <div class="row row-cols-4" style="display: inline-flex;">
+            <div class="col-md social-media">
                 <a href="https://www.facebook.com/epexstudio/">
-                  <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-facebook-f"></i>
                 </a>
             </div>
             <div class="col-md social-media">
               <a href="https://www.instagram.com/epexstudio/">
                 <i class="fab fa-instagram"></i>
               </a>
-          </div>
-          <div class="col-md social-media">
-            <a href="https://twitter.com/epex_studio">
+            </div>
+            <div class="col-md social-media">
+              <a href="https://twitter.com/epex_studio">
               <i class="fab fa-twitter"></i>
-            </a>
-              </div>
-                <div class="col-md social-media">
-                <a href="https://www.youtube.com/channel/UCXLHGbWp5faz2hoHjf9M09Q/">
-                  <i class="fab fa-youtube"></i>
-                </a>
-                  </div>
+              </a>
+            </div>
+            <div class="col-md social-media">
+              <a href="https://www.youtube.com/channel/UCXLHGbWp5faz2hoHjf9M09Q/">
+                <i class="fab fa-youtube"></i>
+              </a>
+            </div>
             </div>
           </div>
-        </div>
         </section>
         <!------------------ footer-section ----------------->
         <section id="footer">
@@ -182,7 +187,7 @@
                 <p><b>CONTACT US</b></p>
                 <p><i class="fas fa-map-marked-alt"></i>Parippally, Kollam,Kerala, India</p>
                 <p><i class="fas fa-phone"></i>+91 8921237566</p>
-                <p><i class="fas fa-envelope"></i>epexstudio701@gmail.com</p>
+                <p><i class="fas fa-envelope"></i><a href="mailto:epexstudio701@gmail.com">epexstudio701@gmail.com</a></p>
                 </div>
                 <div class="col-md-4 footer-box1">
                   <p class="year">© 2020 Epex Studio</p>
@@ -201,5 +206,17 @@
         <script>
           var scroll = new SmoothScroll('a[href*="#"]');
         </script>
+
+        <script type="text/javascript">
+          document.getElementById("btn").onclick = function() 
+          {
+            document.getElementById("all").style.display= "inline-block";
+            document.getElementById("btn").style.display= "none";
+          }
+        </script>
+        <script>
+          $('body').scrollspy({ target: '#navbarNav',offset:108 })
+        </script>
+      </div>
     </body>
 </html>
