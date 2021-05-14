@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: epex.studio
+Token: c954e51c68dd273f4f463b252d4e2472ceb98ac1fc01c6158943fa844f541649
